@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_vertical"
+    android:background="@drawable/backgroud">
+
+    <EditText
+        android:id="@+id/editTextTenDangNhap"
+        android:layout_width="265dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:background="@drawable/user"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:hint="@string/TenDangNhap" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextMatKhau"
+        android:layout_width="265dp"
+        android:layout_height="42dp"
+        android:background="@drawable/user"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:hint="@string/MatKhau"
+        android:inputType="textPassword" 
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DangNhap" 
+        android:onClick="Onclick"
+        android:layout_gravity="center"/>
+	<com.facebook.widget.LoginButton 
+		android:id="@+id/fbbtn"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content" 
+	    android:layout_gravity="center"/>
+
+</LinearLayout>

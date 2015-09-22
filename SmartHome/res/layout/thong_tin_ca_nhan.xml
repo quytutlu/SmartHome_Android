@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+	<TextView
+        android:id="@+id/tvThongTinTaiKhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ThongTinTaiKhoan"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+   <TextView
+        android:id="@+id/tvMaTaiKhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MaTaiKhoan"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvTenDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TenDangNhap"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Email"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvSDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SDT"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvNguoiTao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/NguoiTao"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvVaiTro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/VaiTro"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvNgayThamGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:text="@string/NgayThamGia"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+     <TextView
+        android:id="@+id/tvHanDung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:text="@string/HanDung"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:visibility="gone"/>
+
+</LinearLayout>
