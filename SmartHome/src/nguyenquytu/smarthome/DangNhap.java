@@ -65,7 +65,7 @@ public class DangNhap extends Activity {
 		{
 			Log.i("facebook", "Logged out...");
 			
-			Request.newMeRequest(session, new Request.GraphUserCallback() {
+			Request me = Request.newMeRequest(session, new Request.GraphUserCallback() {
 
 				@Override
 				public void onCompleted(GraphUser user, Response response) {
@@ -86,16 +86,16 @@ public class DangNhap extends Activity {
 						//new DangNhapVoiFace(json, user.getProperty("email")+"").execute();
 						url = "http://smarthometl.com/index.php?cmd=dangnhapvoiface&tendangnhap="+json+"&email="+user.getProperty("email")+"";
 						new ParseJSONTask().execute();
-						//Intent t = new Intent(DangNhap.this, info.androidhive.slidingmenu.DangNhapVoiFace.class);
-						//t.putExtra("json", json);
-						//t.putExtra("email", user.getProperty("email")+"");
-						//startActivity(t);
 					}else {
 						showMsg("its null");
 						showMsg(response.getError().getErrorMessage());
 					}
 				}
-			}).executeAsync();
+			});
+			Bundle params = me.getParameters();
+			params.putString("fields", "email,name");
+			me.setParameters(params);
+			me.executeAsync();
 
 		}else if (state.isClosed()) {
 			Log.i("facebook", "Logged out...");
